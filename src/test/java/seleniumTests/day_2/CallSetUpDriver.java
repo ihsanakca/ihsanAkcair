@@ -1,12 +1,12 @@
-package amazonCom.day_2;
+package seleniumTests.day_2;
 
-import amazonCom.usableMethods.SetUpDriver;
+import seleniumTests.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class CallSetUpDriver {
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver=SetUpDriver.getDriver("EDGE");
+        WebDriver driver= WebDriverFactory.getDriver("EDGE");
 
         driver.get("https://www.amazon.com.tr/");
 

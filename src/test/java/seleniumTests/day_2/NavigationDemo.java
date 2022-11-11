@@ -1,12 +1,11 @@
-package amazonCom.day_2;
+package seleniumTests.day_2;
 
-import amazonCom.usableMethods.SetUpDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import seleniumTests.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class NavigationDemo {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver= SetUpDriver.getDriver("fireFox");
+        WebDriver driver= WebDriverFactory.getDriver("fireFox");
 
         driver.get("https://www.krafttechnologie.com");
         Thread.sleep(2000);
@@ -22,7 +21,7 @@ public class NavigationDemo {
         System.out.println("driver.getTitle() = " + driver.getTitle());
         driver.close();
 
-        WebDriver driver1= SetUpDriver.getDriver("Edge");
+        WebDriver driver1= WebDriverFactory.getDriver("Edge");
         driver1.get("https://www.facebook.com");
         System.out.println("driver1.getTitle() = " + driver1.getTitle());
         driver1.quit();

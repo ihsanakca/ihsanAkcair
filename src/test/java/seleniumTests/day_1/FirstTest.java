@@ -1,4 +1,4 @@
-package amazonCom.day_1;
+package seleniumTests.day_1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

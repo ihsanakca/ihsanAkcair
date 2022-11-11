@@ -1,11 +1,11 @@
-package amazonCom.day_2;
+package seleniumTests.day_2;
 
-import amazonCom.usableMethods.SetUpDriver;
+import seleniumTests.utilities.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class GetUrl {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver= SetUpDriver.getDriver("chRome");
+        WebDriver driver= WebDriverFactory.getDriver("chRome");
         driver.navigate().to("https://facebook.com");
         Thread.sleep(2000);
         driver.manage().window().maximize();

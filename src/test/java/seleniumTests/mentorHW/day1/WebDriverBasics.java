@@ -1,4 +1,4 @@
-package amazonCom.mentorExample.day1;
+package seleniumTests.mentorHW.day1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
